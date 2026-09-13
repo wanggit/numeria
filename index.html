@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Numeria — 69 offline financial calculators for iPhone</title>
+  <meta name="description" content="Numeria puts 69 financial calculators in your pocket: mortgages, loans, investing, retirement, US tax and everyday money maths. No account, no ads, no network.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="wanggit">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://wanggit.github.io/numeria/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Numeria">
+  <meta property="og:title" content="Numeria — 69 offline financial calculators">
+  <meta property="og:description" content="Mortgage, loan, investment, retirement and US tax maths — entirely on-device. No account, no ads, no network.">
+  <meta property="og:url" content="https://wanggit.github.io/numeria/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a56db'/%3E%3Ctext x='16' y='23' font-family='-apple-system,Helvetica,Arial' font-size='19' font-weight='700' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #fbfbfd;
+      --surface: #ffffff;
+      --ink: #1d1d1f;
+      --ink-soft: #515154;
+      --ink-faint: #86868b;
+      --line: #d2d2d7;
+      --accent: #1a56db;
+      --accent-soft: #eef2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b0b0d;
+        --surface: #161618;
+        --ink: #f5f5f7;
+        --ink-soft: #c7c7cc;
+        --ink-faint: #8e8e93;
+        --line: #2c2c2e;
+        --accent: #7aa2f7;
+        --accent-soft: #17203a;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans", "PingFang SC", "Hiragino Sans",
+        sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1 1 auto;
+      display: grid;
+      place-items: center;
+      padding: 3rem 1.5rem;
+    }
+    .card {
+      max-width: 34rem;
+      text-align: center;
+    }
+    .mark {
+      display: grid;
+      place-items: center;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin: 0 auto 1.4rem;
+      border-radius: 1.15rem;
+      background: linear-gradient(150deg, #2f6ff0, #1a3fa8);
+      color: #fff;
+      font-size: 2.2rem;
+      font-weight: 700;
+      box-shadow: 0 6px 22px rgba(26, 86, 219, 0.35);
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(2rem, 7vw, 2.75rem);
+      letter-spacing: -0.03em;
+      font-weight: 700;
+    }
+    .tag {
+      margin: 0 0 1.6rem;
+      color: var(--ink-soft);
+      font-size: 1.0625rem;
+    }
+    .facts {
+      list-style: none;
+      margin: 0 0 2rem;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .facts li {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8125rem;
+      font-weight: 600;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      align-items: center;
+    }
+    a.cta {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9375rem;
+    }
+    a.cta:hover { filter: brightness(1.08); }
+    a.ghost {
+      color: var(--ink-soft);
+      text-decoration: none;
+      font-size: 0.9375rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1px;
+    }
+    a.ghost:hover { color: var(--accent); border-color: var(--accent); }
+    footer {
+      padding: 1.25rem 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.8125rem;
+      color: var(--ink-faint);
+    }
+    footer a { color: var(--ink-faint); }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <div class="mark" aria-hidden="true">N</div>
+      <h1>Numeria</h1>
+      <p class="tag">69 financial calculators in your pocket — mortgages, loans,
+        investing, retirement, US federal &amp; state tax, and everyday money
+        maths. Every calculation runs on-device.</p>
+      <ul class="facts">
+        <li>No account</li>
+        <li>No ads</li>
+        <li>No network</li>
+        <li>No data collected</li>
+      </ul>
+      <div class="links">
+        <a class="cta" href="./privacy/">Privacy Policy</a>
+        <a class="ghost" href="https://github.com/wanggit/numeria/issues">Support &amp; issue tracker</a>
+        <a class="ghost" href="https://github.com/wanggit/numeria">Source repository</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2026 wanggit &middot; Numeria is a trademark-free personal project &middot;
+    <a href="./privacy/">privacy</a>
+  </footer>
+</body>
+</html>

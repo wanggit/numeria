@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <title>Numeria — Privacy Policy</title>
+  <meta name="description" content="Numeria: Finance Calculators collects no personal data. Privacy policy available in nine languages.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="wanggit">
+  <meta name="referrer" content="no-referrer">
+  <link rel="canonical" href="https://wanggit.github.io/numeria/privacy/">
+  <link rel="alternate" hreflang="en" href="https://wanggit.github.io/numeria/privacy/#en">
+  <link rel="alternate" hreflang="zh-Hans" href="https://wanggit.github.io/numeria/privacy/#zh">
+  <link rel="alternate" hreflang="ja" href="https://wanggit.github.io/numeria/privacy/#ja">
+  <link rel="alternate" hreflang="ar" href="https://wanggit.github.io/numeria/privacy/#ar">
+  <link rel="alternate" hreflang="es" href="https://wanggit.github.io/numeria/privacy/#es">
+  <link rel="alternate" hreflang="pt" href="https://wanggit.github.io/numeria/privacy/#pt">
+  <link rel="alternate" hreflang="fr" href="https://wanggit.github.io/numeria/privacy/#fr">
+  <link rel="alternate" hreflang="de" href="https://wanggit.github.io/numeria/privacy/#de">
+  <link rel="alternate" hreflang="hi" href="https://wanggit.github.io/numeria/privacy/#hi">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Numeria">
+  <meta property="og:title" content="Numeria — Privacy Policy">
+  <meta property="og:description" content="Numeria collects no personal data: no account, no ads, no analytics, no server.">
+  <meta property="og:url" content="https://wanggit.github.io/numeria/privacy/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="de_DE">
+  <meta property="og:locale:alternate" content="hi_IN">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a56db'/%3E%3Ctext x='16' y='23' font-family='-apple-system,Helvetica,Arial' font-size='19' font-weight='700' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <style>
+:root {
+  --bg: #fbfbfd;
+  --surface: #ffffff;
+  --ink: #1d1d1f;
+  --ink-soft: #515154;
+  --ink-faint: #86868b;
+  --line: #d2d2d7;
+  --line-soft: #e8e8ed;
+  --accent: #1a56db;
+  --accent-soft: #eef2ff;
+  --note-bg: #f0f7ff;
+  --note-line: #b6d0f7;
+  --warn-bg: #fffbf0;
+  --warn-line: #f0dcae;
+  --radius: 14px;
+  --max: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0b0d;
+    --surface: #161618;
+    --ink: #f5f5f7;
+    --ink-soft: #c7c7cc;
+    --ink-faint: #8e8e93;
+    --line: #2c2c2e;
+    --line-soft: #232325;
+    --accent: #7aa2f7;
+    --accent-soft: #17203a;
+    --note-bg: #111a2c;
+    --note-line: #24406e;
+    --warn-bg: #231d10;
+    --warn-line: #5a4722;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  /* Reserve the sticky topbar's height so native anchor jumps (and the
+     browser's own scroll-to-hash on load) never hide a heading under it.
+     The topbar is one row on wide screens, two rows once the nine language
+     pills wrap, hence the responsive value. */
+  scroll-padding-top: 5.5rem;
+}
+
+@media (max-width: 63.99rem) {
+  html { scroll-padding-top: 11rem; }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Arabic",
+    "Noto Sans Devanagari", "Noto Sans Hebrew", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "PingFang SC", "Microsoft YaHei",
+    "Yu Gothic", sans-serif;
+  font-size: 17px;
+  line-height: 1.68;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+@supports not (background: color-mix(in srgb, red, blue)) {
+  .topbar { background: var(--surface); }
+}
+
+.topbar-inner {
+  /* Wider than the reading column on purpose: nine language pills plus the
+     brand fit on one row at >=1024px, and wrap gracefully below that. */
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0.7rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 8px;
+  background: linear-gradient(150deg, #2f6ff0, #1a3fa8);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+
+.langs {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  margin-inline-start: auto;
+}
+
+.langs a {
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.langs a:hover { background: var(--line-soft); color: var(--ink); }
+.langs a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.langs a[aria-current="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  font-weight: 600;
+}
+
+@supports not (background: color-mix(in srgb, red, blue)) {
+  .langs a[aria-current="true"] { border-color: var(--accent); }
+}
+
+/* ---------- document ---------- */
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.25rem 1.25rem 3rem;
+}
+
+.panel { animation: fade 0.22s ease-out; }
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .panel { animation: none; }
+}
+
+.doc-head { margin-bottom: 1.75rem; }
+
+h1 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.85rem, 5.5vw, 2.4rem);
+  line-height: 1.18;
+  letter-spacing: -0.028em;
+  font-weight: 700;
+}
+
+.product {
+  margin: 0;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.effective {
+  margin: 0.3rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+h2 {
+  margin: 2.1rem 0 0.6rem;
+  font-size: 1.22rem;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  font-weight: 650;
+}
+
+p { margin: 0 0 0.95rem; }
+
+ul {
+  margin: 0 0 1.05rem;
+  padding-inline-start: 1.35rem;
+}
+
+li { margin-bottom: 0.4rem; }
+li::marker { color: var(--ink-faint); }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { font-weight: 650; }
+
+/* ---------- callouts ---------- */
+
+.tldr, .note, .disclaimer {
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  margin: 0 0 1.4rem;
+}
+
+.tldr {
+  background: var(--accent-soft);
+  border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.tldr-head {
+  margin: 0 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.tldr p { margin: 0; font-size: 1.02rem; }
+
+@supports not (background: color-mix(in srgb, red, blue)) {
+  .tldr { border-color: var(--accent); }
+}
+
+.note {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  background: var(--note-bg);
+  border: 1px solid var(--note-line);
+}
+
+.note-mark {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-top: 0.18rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.note div { flex: 1 1 auto; }
+.note p:last-child { margin-bottom: 0; }
+
+.disclaimer {
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  margin-top: 2.5rem;
+}
+
+.disclaimer h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+}
+
+.disclaimer p { margin: 0; font-size: 0.9375rem; color: var(--ink-soft); }
+
+/* ---------- table ---------- */
+
+.table-wrap {
+  margin: 0 0 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+caption { text-align: start; }
+
+th, td {
+  padding: 0.72rem 0.95rem;
+  text-align: start;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+thead th {
+  background: var(--line-soft);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:nth-child(even) { background: color-mix(in srgb, var(--line-soft) 45%, transparent); }
+
+@supports not (background: color-mix(in srgb, red, blue)) {
+  tbody tr:nth-child(even) { background: var(--line-soft); }
+}
+
+td:first-child { font-weight: 550; width: 46%; }
+
+/* On narrow screens the table becomes stacked cards. */
+@media (max-width: 34rem) {
+  .table-wrap { border: 0; background: transparent; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  tbody tr {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    padding: 0.35rem 0;
+    margin-bottom: 0.6rem;
+  }
+  td { border: 0; padding: 0.4rem 0.9rem; }
+  td:first-child { width: 100%; }
+  td:last-child { color: var(--ink-soft); font-size: 0.875rem; }
+}
+
+/* ---------- footer ---------- */
+
+footer.site {
+  border-top: 1px solid var(--line-soft);
+  background: var(--surface);
+  padding: 1.6rem 1.25rem 2.4rem;
+  font-size: 0.8125rem;
+  color: var(--ink-faint);
+}
+
+footer.site .inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+footer.site a { color: var(--ink-soft); }
+
+/* ---------- a11y helpers ---------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px; padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -4rem;
+  z-index: 20;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: top 0.15s;
+}
+
+.skip:focus { top: 0.75rem; }
+
+/* RTL: flip the visual rhythm without touching logical properties above. */
+[dir="rtl"] body { line-height: 1.85; }
+[dir="rtl"] .note-mark { font-style: normal; }
+
+/* ---------- panel visibility ---------- */
+
+/* With scripting ON, .is-active is the single source of truth. */
+.js .panel { display: none; }
+.js .panel.is-active { display: block; }
+
+/* With scripting OFF the .js class is never added, so :target drives the
+   switch instead. Scoped to html:not(.js) on purpose: unscoped, the
+   `main:not(:has(...)) .panel:not(#en)` rule below carries an ID in its
+   :not() and would out-specify `.js .panel.is-active`, breaking clicks. */
+html:not(.js) main:has(.panel:target) .panel:not(:target) { display: none; }
+html:not(.js) main:not(:has(.panel:target)) .panel:not(#en) { display: none; }
+
+/* ---------- print ---------- */
+
+@media print {
+  .topbar, .skip, footer.site { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  main { max-width: none; padding: 0; }
+  .js .panel { display: none !important; }
+  .js .panel.is-active { display: block !important; }
+  .tldr, .note, .disclaimer, .table-wrap { border-color: #999; background: #fff; }
+  a { color: #000; text-decoration: underline; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #444; }
+  h2 { break-after: avoid; }
+  tr, .note, .disclaimer { break-inside: avoid; }
+}
+  </style>
+</head>
+<body>
+  <a class="visually-hidden" href="#en">Skip to content</a> <a class="visually-hidden" href="#zh">跳到正文</a> <a class="visually-hidden" href="#ja">本文へスキップ</a> <a class="visually-hidden" href="#ar">تخطَّ إلى المحتوى</a> <a class="visually-hidden" href="#es">Saltar al contenido</a> <a class="visually-hidden" href="#pt">Pular para o conteúdo</a> <a class="visually-hidden" href="#fr">Aller au contenu</a> <a class="visually-hidden" href="#de">Zum Inhalt springen</a> <a class="visually-hidden" href="#hi">सामग्री पर जाएँ</a>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="https://github.com/wanggit/numeria" rel="noopener">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Numeria</span>
+      </a>
+      <nav class="langs" aria-label="Language">
+      <a href="#en" data-lang="en" lang="en" hreflang="en" title="English">English</a>
+      <a href="#zh" data-lang="zh" lang="zh-Hans" hreflang="zh-Hans" title="简体中文">简体中文</a>
+      <a href="#ja" data-lang="ja" lang="ja" hreflang="ja" title="日本語">日本語</a>
+      <a href="#ar" data-lang="ar" lang="ar" hreflang="ar" title="العربية">العربية</a>
+      <a href="#es" data-lang="es" lang="es" hreflang="es" title="Español">Español</a>
+      <a href="#pt" data-lang="pt" lang="pt" hreflang="pt" title="Português">Português</a>
+      <a href="#fr" data-lang="fr" lang="fr" hreflang="fr" title="Français">Français</a>
+      <a href="#de" data-lang="de" lang="de" hreflang="de" title="Deutsch">Deutsch</a>
+      <a href="#hi" data-lang="hi" lang="hi" hreflang="hi" title="हिन्दी">हिन्दी</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+  <section class="panel" id="en" lang="en"           dir="ltr" aria-labelledby="en-h1">
+    <header class="doc-head">
+      <h1 id="en-h1">Privacy Policy</h1>
+      <p class="product"><strong>Numeria: Finance Calculators</strong> &middot; version 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>Effective date: 13 September 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">In one sentence</h2>
+      <p>Numeria collects nothing. There is no account, no advertising, no analytics and no server &mdash; every calculation happens entirely on your device, and the numbers you type are never stored or transmitted.</p>
+    </div>
+
+      <h2>1. What we do not collect</h2>
+      <p>Numeria contains no server component and issues no network requests of its own. We therefore cannot collect, and have never collected:</p>
+      <ul>
+        <li>personal identifiers such as your name, email address, phone number or date of birth</li>
+        <li>financial account details such as bank, card or brokerage account numbers</li>
+        <li>precise or approximate location</li>
+        <li>contacts, photos, health data, or any other content from your device</li>
+        <li>usage analytics, behavioural profiles, or the advertising identifier (IDFA)</li>
+      </ul>
+      <p>Because nothing is collected in the first place, there is nothing that could be shared with, sold to, or breached by a third party. The App Store privacy label for Numeria is <strong>&ldquo;Data Not Collected&rdquo;</strong>.</p>
+      <h2>2. What is stored on your device</h2>
+      <p>Numeria writes a small amount of data to your device&rsquo;s local preferences store so that it can remember your choices between launches. This data never leaves your device and is not readable by us:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Language</caption>
+        <thead>
+        <tr>
+          <th scope="col">Stored item</th>
+          <th scope="col">Why it exists</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Identifiers of the last 10 calculators you opened</td>
+          <td>Populates the &ldquo;Recent&rdquo; list on the home screen</td>
+        </tr>
+        <tr>
+          <td>Identifiers of calculators you marked as favourites</td>
+          <td>Populates your &ldquo;Favourites&rdquo; list</td>
+        </tr>
+        <tr>
+          <td>Currency symbol preference</td>
+          <td>Formats monetary results the way you expect</td>
+        </tr>
+        <tr>
+          <td>Theme preference (light, dark or system)</td>
+          <td>Applies your chosen appearance</td>
+        </tr>
+        <tr>
+          <td>Language preference</td>
+          <td>Displays the interface in your language</td>
+        </tr>
+        <tr>
+          <td>Unlock flag</td>
+          <td>Remembers that you purchased &ldquo;Unlock All&rdquo; so you are never asked to pay twice</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>The figures you enter are not saved.</strong> No calculator input, intermediate value or result is written to disk or sent anywhere. Closing a calculator discards whatever you typed into it.</div>
+      </aside>
+      <h2>3. Purchases</h2>
+      <p>Numeria offers a single non-consumable in-app purchase, &ldquo;Unlock All Calculators&rdquo;. Payment is processed entirely by Apple through the App Store and StoreKit. We never see, receive or store your payment method, card number, Apple ID or purchase history.</p>
+      <p>The only purchase-related datum the app keeps is the local unlock flag described above. When you use <em>Restore Purchases</em>, the app queries the App Store directly from your device; the response is used to set that flag and is not forwarded to us. Refunds are handled by Apple under its own policies.</p>
+      <h2>4. Third parties</h2>
+      <p>Numeria embeds no third-party SDKs &mdash; no advertising networks, no analytics providers, no social-media SDKs, no crash reporters. The only platform services it communicates with are:</p>
+      <ul>
+        <li>Apple&rsquo;s App Store, solely to validate the in-app purchase, and</li>
+        <li>your device&rsquo;s external browser, when you tap the <em>Support</em> or <em>Privacy Policy</em> links in Settings and the system opens that URL outside the app.</li>
+      </ul>
+      <h2>5. About this web page</h2>
+      <p>The app collects nothing, but this document is hosted on GitHub Pages so that the App Store has a URL to link to. When you load it, GitHub may record standard server log information &mdash; such as your IP address, browser type and request time &mdash; under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub&rsquo;s own privacy statement</a>. We do not receive or have access to those logs.</p>
+      <p>This page loads no external fonts, scripts, stylesheets, images or trackers. The only thing it writes to your browser is your chosen language, so that the page reopens in the same language next time.</p>
+      <h2>6. Children</h2>
+      <p>Numeria is a general-purpose calculation tool with an age rating of 4+. It is not directed at children, and it collects no data from anyone &mdash; children included.</p>
+      <h2>7. Data retention and deletion</h2>
+      <p>There is no server-side copy of your data, so there is nothing for us to retain, export or delete. To remove every trace of data Numeria has written, simply delete the app: uninstalling erases the local preferences listed in section 2.</p>
+      <h2>8. Your rights</h2>
+      <p>Because Numeria holds no personal data about you, there is no personal data for us to disclose, correct, export or erase on request. Rights under the GDPR, the CCPA and similar regimes attach to personal data, and this app creates none. If you believe anything on this page is inaccurate, please tell us and we will correct it.</p>
+      <h2>9. Changes to this policy</h2>
+      <p>If a future version of Numeria changes anything described here &mdash; for example, if we added optional cloud sync or any networked feature &mdash; we will update this page, revise the effective date above, and disclose the change in the App Store release notes before that version ships.</p>
+      <h2>10. Contact</h2>
+      <p>Questions about this policy, or about the app: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>Developer: <strong>wanggit</strong> (individual developer), publisher of <em>Numeria: Finance Calculators</em> on the App Store.</p>
+
+    <div class="disclaimer">
+      <h2>Not financial advice</h2>
+      <p>Numeria produces arithmetic estimates for planning purposes. Its output is not financial, tax, legal or investment advice, and it does not take your complete circumstances into account. Consult a qualified professional before acting on any figure the app shows you.</p>
+    </div>
+  </section>
+  <section class="panel" id="zh" lang="zh-Hans"           dir="ltr" aria-labelledby="zh-h1">
+    <header class="doc-head">
+      <h1 id="zh-h1">隐私政策</h1>
+      <p class="product"><strong>Numeria：财务计算器</strong> &middot; 版本 1.0.0 &middot; iOS（iPhone）</p>
+      <p class="effective"><time>生效日期：2026 年 9 月 13 日</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">一句话结论</h2>
+      <p>Numeria 不收集任何信息。没有账号、没有广告、没有统计分析、没有服务器——所有计算全部在你的设备上完成，你输入的数字既不会被保存，也不会被上传。</p>
+    </div>
+
+      <h2>一、我们不收集哪些信息</h2>
+      <p>Numeria 不含任何服务端组件，App 自身不发起网络请求。因此我们无法收集、也从未收集过下列信息：</p>
+      <ul>
+        <li>姓名、邮箱、电话号码、出生日期等个人身份信息</li>
+        <li>银行账号、银行卡号、证券账户等金融账户信息</li>
+        <li>精确或大致位置</li>
+        <li>通讯录、照片、健康数据，或设备上的任何其他内容</li>
+        <li>使用行为分析、用户画像，以及广告标识符（IDFA）</li>
+      </ul>
+      <p>由于一开始就没有收集任何数据，也就不存在向第三方共享、出售，或被第三方泄露的可能。Numeria 在 App Store 的隐私标签为<strong>「不收集数据」（Data Not Collected）</strong>。</p>
+      <h2>二、哪些信息保存在你的设备上</h2>
+      <p>为了在多次启动之间记住你的选择，Numeria 会向设备的本地偏好存储写入少量数据。这些数据不会离开你的设备，我们也无法读取：</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">语言</caption>
+        <thead>
+        <tr>
+          <th scope="col">保存的内容</th>
+          <th scope="col">用途</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>你最近打开的 10 个计算器的标识符</td>
+          <td>用于在首页显示「最近使用」列表</td>
+        </tr>
+        <tr>
+          <td>你收藏的计算器标识符</td>
+          <td>用于显示「收藏」列表</td>
+        </tr>
+        <tr>
+          <td>货币符号偏好</td>
+          <td>按你习惯的方式格式化金额结果</td>
+        </tr>
+        <tr>
+          <td>主题偏好（浅色 / 深色 / 跟随系统）</td>
+          <td>应用你选择的外观</td>
+        </tr>
+        <tr>
+          <td>语言偏好</td>
+          <td>以你选择的语言显示界面</td>
+        </tr>
+        <tr>
+          <td>解锁标记</td>
+          <td>记住你已购买「解锁全部」，避免重复付费</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>你输入的数值不会被保存。</strong>任何计算器的输入、中间值与结果都不会写入磁盘，也不会发送到任何地方。关闭一个计算器，你刚才输入的内容即被丢弃。</div>
+      </aside>
+      <h2>三、购买</h2>
+      <p>Numeria 仅提供一项非消耗型 App 内购买项目「解锁全部计算器」。支付完全由 Apple 通过 App Store 与 StoreKit 处理，我们不会看到、接收或存储你的支付方式、银行卡号、Apple ID 或购买记录。</p>
+      <p>与购买相关、App 唯一保留的数据就是上文所述的本地解锁标记。当你点击<em>恢复购买</em>时，App 直接从你的设备向 App Store 查询，查询结果仅用于设置该标记，不会回传给我们。退款由 Apple 按其自身政策处理。</p>
+      <h2>四、第三方</h2>
+      <p>Numeria 不集成任何第三方 SDK——没有广告联盟、没有统计服务商、没有社交平台 SDK、没有崩溃上报工具。它通信的对象仅限于：</p>
+      <ul>
+        <li>Apple 的 App Store，且仅用于校验 App 内购买；</li>
+        <li>你设备的外部浏览器——当你在「设置」中点击<em>支持</em>或<em>隐私政策</em>链接时，由系统在 App 之外打开该网址。</li>
+      </ul>
+      <h2>五、关于本网页</h2>
+      <p>App 本身不收集任何信息，但本文件托管在 GitHub Pages 上，以便向 App Store 提供一个可访问的网址。你加载本页时，GitHub 可能依据<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub 自身的隐私声明</a>记录标准服务器日志信息，例如你的 IP 地址、浏览器类型与请求时间。我们不会收到、也无权访问这些日志。</p>
+      <p>本页不加载任何外部字体、脚本、样式表、图片或跟踪器。它写入你浏览器的唯一内容是你选择的语言，以便下次打开时仍显示同一语言。</p>
+      <h2>六、儿童</h2>
+      <p>Numeria 是通用计算工具，年龄分级为 4+。它并非面向儿童设计，也不会收集任何人（包括儿童）的数据。</p>
+      <h2>七、数据留存与删除</h2>
+      <p>服务端不存在你的任何数据副本，因此我们这边没有需要留存、导出或删除的内容。若希望彻底清除 Numeria 写入的数据，直接删除 App 即可：卸载会一并抹除第二节列出的全部本地偏好数据。</p>
+      <h2>八、你的权利</h2>
+      <p>由于 Numeria 不持有任何关于你的个人数据，也就不存在可供我们依请求披露、更正、导出或删除的个人数据。GDPR、CCPA 等法规赋予的权利针对的是个人数据，而本 App 不产生任何个人数据。如果你认为本页任何表述有误，请告知我们，我们会更正。</p>
+      <h2>九、政策变更</h2>
+      <p>如果 Numeria 的未来版本改变了本页所述的任何内容——例如新增可选的云同步或任何联网功能——我们会更新本页、修订上方的生效日期，并在该版本上架前于 App Store 的更新说明中披露此项变更。</p>
+      <h2>十、联系我们</h2>
+      <p>对本政策或本 App 有任何疑问，请在 <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a> 提交 issue。</p>
+      <p>开发者：<strong>wanggit</strong>（个人开发者），App Store 上<em>Numeria：财务计算器</em>的发布者。</p>
+
+    <div class="disclaimer">
+      <h2>不构成专业建议</h2>
+      <p>Numeria 输出的是用于规划的算术估算值，不构成财务、税务、法律或投资建议，也无法涵盖你的完整实际情况。在依据 App 显示的任何数字采取行动前，请咨询具备资质的专业人士。</p>
+    </div>
+  </section>
+  <section class="panel" id="ja" lang="ja"           dir="ltr" aria-labelledby="ja-h1">
+    <header class="doc-head">
+      <h1 id="ja-h1">プライバシーポリシー</h1>
+      <p class="product"><strong>Numeria：財務計算機</strong> &middot; バージョン 1.0.0 &middot; iOS（iPhone）</p>
+      <p class="effective"><time>生效日：2026 年 9 月 13 日</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">結論</h2>
+      <p>Numeria は何らかの情報を収集することはありません。アカウントなし、広告なし、解析なし、サーバーなし — すべての計算は端末内だけで完結し、入力された数値は保存も送信もされません。</p>
+    </div>
+
+      <h2>1. 収集しない情報</h2>
+      <p>Numeria にはサーバー側の構成要素がなく、アプリ自身がネットワーク要求を発信することもありません。したがって、以下を収集することは技術的に不可能であり、過去にも収集したことはありません。</p>
+      <ul>
+        <li>氏名、メール アドレス、電話 番号、生年月日 などの 個人 識別 子</li>
+        <li>銀行 口座、カード 番号、証券 口座 などの 金融 口座 情報</li>
+        <li>正確 な または おおよそ の 位置 情報</li>
+        <li>連絡先、写真、健康 データ、その他 端末 内 のあらゆるコンテンツ</li>
+        <li>利用 状況 の 解析、行動 プロファイル、広告 識別子（IDFA）</li>
+      </ul>
+      <p>そもそも何も収集していないため、第三者への共有・売却、あるいは第三者による漏えいが成立し得ません。Numeria の App Store プライバシーラベルは<strong>「データの収集なし」（Data Not Collected）</strong>です。</p>
+      <h2>2. 端末に保存される情報</h2>
+      <p>起動の間あなたの設定を記憶するため、Numeria は端末のローカル設定領域に少量のデータを書き込みます。このデータが端末の外に出ることはなく、私たちが読み取ることもできません。</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">言語</caption>
+        <thead>
+        <tr>
+          <th scope="col">保存される項目</th>
+          <th scope="col">目的</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>最後に開いた 10 個の計算機の識別子</td>
+          <td>ホーム画面の「最近使用」一覧を表示するため</td>
+        </tr>
+        <tr>
+          <td>お気に入りとして印を付けた計算機の識別子</td>
+          <td>「お気に入り」一覧を表示するため</td>
+        </tr>
+        <tr>
+          <td>通貨記号の設定</td>
+          <td>金額の結果をあなたの想定どおりに表示するため</td>
+        </tr>
+        <tr>
+          <td>テーマ設定（ライト／ダーク／システムに従う）</td>
+          <td>選択された外観を適用するため</td>
+        </tr>
+        <tr>
+          <td>言語設定</td>
+          <td>界面をあなたの言語で表示するため</td>
+        </tr>
+        <tr>
+          <td>ロック解除フラグ</td>
+          <td>「すべて解锁」を購入済みであることを記憶し、二重課金を防ぐため</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>あなたが入力した数値は保存されません。</strong>計算機への入力値、中間値、結果のいずれもディスクに書き込まれず、どこにも送信されません。計算機を閉じると、入力した内容は破棄されます。</div>
+      </aside>
+      <h2>3. 購入</h2>
+      <p>Numeria が提供するのは「すべての計算機を解锁」という 1 種類の非消耗型アプリ内購入のみです。支払いは App Store と StoreKit を通じて Apple がすべて処理します。私たちはあなたの支払方法、カード番号、Apple ID、購入履歴を見ることも、受け取ることも、保存することもありません。</p>
+      <p>購入に関してアプリが保持する唯一のデータは、上記のローカルなロック解除フラグだけです。<em>購入の復元</em>を実行すると、アプリは端末から直接 App Store に照会し、その応答はフラグの設定にのみ使われ、私たちへ転送されることはありません。返金は Apple 自身のポリシーに従って処理されます。</p>
+      <h2>4. 第三者</h2>
+      <p>Numeria は第三者の SDK を一切組み込んでいません — 広告ネットワーク、解析プロバイダー、ソーシャルメディア SDK、クラッシュ レポーターのいずれもありません。通信相手となるプラットフォーム サービスは次の 2 つだけです。</p>
+      <ul>
+        <li>Apple の App Store（アプリ内購入の検証のみを目的とします）</li>
+        <li>端末の外部ブラウザー — 「設定」で<em>サポート</em>または<em>プライバシーポリシー</em>のリンクをタップしたとき、システムがアプリの外でその URL を開きます。</li>
+      </ul>
+      <h2>5. 本ウェブページについて</h2>
+      <p>アプリは何も収集しませんが、App Store に提示できる URL が必要であるため、本ドキュメントは GitHub Pages にホストされています。本ページを読み込む際、GitHub は<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub 自身のプライバシーに関する声明</a>に基づき、IP アドレス、ブラウザーの種類、要求時刻といった標準的なサーバー ログ情報を記録する可能性があります。私たちはそれらのログを受け取らず、アクセス権も持っていません。</p>
+      <p>本ページは外部のフォント、スクリプト、スタイルシート、画像、トラッカーを一切読み込みません。本ページがブラウザーに書き込む唯一のものは、あなたが選んだ言語であり、次回も同じ言語で開くようにするためだけに使われます。</p>
+      <h2>6. 子ども</h2>
+      <p>Numeria は年齢区分 4+ の汎用計算ツールです。子どもを対象としておらず、子どもを含む誰からもデータを収集しません。</p>
+      <h2>7. データの保持と削除</h2>
+      <p>サーバー側にあなたのデータのコピーは存在しないため、私たちが保持・書き出し・削除すべきものはありません。Numeria が書き込んだデータをすべて消すには、アプリを削除してください。アンインストールにより、第 2 項で挙げたローカル設定も消去されます。</p>
+      <h2>8. あなたの権利</h2>
+      <p>Numeria はあなたに関する個人データを保持していないため、請求に応じて開示・訂正・書き出し・消去すべき個人データが存在しません。GDPR や CCPA などの制度が定める権利は個人データに係るものですが、本アプリは個人データを生成しません。本ページの記載に誤りがあるとお考えの場合は、お知らせください。訂正します。</p>
+      <h2>9. ポリシーの変更</h2>
+      <p>将来のバージョンで本ページに記載した内容が変わる場合 — たとえば任意のクラウド同期や何らかのネットワーク機能を追加した場合 — 本ページを更新し、上部の生效日を改め、そのバージョンの配信前に App Store のリリースノートで変更を開示します。</p>
+      <h2>10. お問い合わせ</h2>
+      <p>本ポリシーまたはアプリに関するご質問は <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a> まで issue をお寄せください。</p>
+      <p>開発者：<strong>wanggit</strong>（個人開発者）、App Store における <em>Numeria：財務計算機</em> の発行元。</p>
+
+    <div class="disclaimer">
+      <h2>助言ではありません</h2>
+      <p>Numeria が出力するのは計画立案のための算術的な推計値であり、財務・税務・法務・投資に関する助言ではありません。あなたの完全な状況を考慮するものでもありません。アプリが表示した数値に基づいて行動する前に、資格を持つ専門家にご相談ください。</p>
+    </div>
+  </section>
+  <section class="panel" id="ar" lang="ar"           dir="rtl" aria-labelledby="ar-h1">
+    <header class="doc-head">
+      <h1 id="ar-h1">سياسة الخصوصية</h1>
+      <p class="product"><strong>Numeria: حاسبات مالية</strong> &middot; الإصدار 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>تاريخ السريان: 13 سبتمبر 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">باختصار</h2>
+      <p>لا يجمع Numeria أي شيء. لا حساب، ولا إعلانات، ولا تحليلات، ولا خادم — تتم كل عملية حسابية بالكامل على جهازك، والأرقام التي تُدخلها لا تُخزَّن ولا تُرسَل.</p>
+    </div>
+
+      <h2>١. ما لا نجمعه</h2>
+      <p>لا يحتوي Numeria على أي مكوِّن خادم، ولا يُصدر التطبيق نفسه أي طلبات شبكة. ومن ثمّ لا يمكننا جمع — ولم نجمع قط — أيًّا مما يلي:</p>
+      <ul>
+        <li>المعرِّفات الشخصية مثل الاسم أو البريد الإلكتروني أو رقم الهاتف أو تاريخ الميلاد</li>
+        <li>بيانات الحسابات المالية مثل أرقام الحسابات المصرفية أو البطاقات أو الوساطة</li>
+        <li>الموقع الجغرافي الدقيق أو التقريبي</li>
+        <li>جهات الاتصال أو الصور أو البيانات الصحية أو أي محتوى آخر على جهازك</li>
+        <li>تحليلات الاستخدام أو الملفات السلوكية أو معرِّف الإعلانات (IDFA)</li>
+      </ul>
+      <p>ولأننا لا نجمع شيئًا من الأساس، فلا يوجد ما يمكن مشاركته مع طرف ثالث أو بيعه له أو ما يمكن أن يتعرَّض للاختراق عنده. تصنيف الخصوصية الخاص بـ Numeria على App Store هو <strong>«لا تُجمَع بيانات» (Data Not Collected)</strong>.</p>
+      <h2>٢. ما يُخزَّن على جهازك</h2>
+      <p>يكتب Numeria قدرًا صغيرًا من البيانات في مخزن التفضيلات المحلي على جهازك كي يتذكَّر اختياراتك بين مرات التشغيل. هذه البيانات لا تغادر جهازك أبدًا ولا يمكننا قراءتها:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">اللغة</caption>
+        <thead>
+        <tr>
+          <th scope="col">العنصر المخزَّن</th>
+          <th scope="col">سبب وجوده</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>معرِّفات آخر ١٠ حاسبات فتحتَها</td>
+          <td>لعرض قائمة «الأخيرة» على الشاشة الرئيسية</td>
+        </tr>
+        <tr>
+          <td>معرِّفات الحاسبات التي علَّمتَها كمفضَّلة</td>
+          <td>لعرض قائمة «المفضَّلة»</td>
+        </tr>
+        <tr>
+          <td>تفضيل رمز العملة</td>
+          <td>لتنسيق النتائج النقدية كما تتوقَّع</td>
+        </tr>
+        <tr>
+          <td>تفضيل السمة (فاتح أو داكن أو حسب النظام)</td>
+          <td>لتطبيق المظهر الذي اخترتَه</td>
+        </tr>
+        <tr>
+          <td>تفضيل اللغة</td>
+          <td>لعرض الواجهة بلغتك</td>
+        </tr>
+        <tr>
+          <td>علامة فتح القفل</td>
+          <td>لتذكُّر أنك اشتريت «فتح الكل» فلا يُطلَب منك الدفع مرّتين</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>الأرقام التي تُدخلها لا تُحفَظ.</strong> لا تُكتَب أي مدخلة حاسبة ولا قيمة وسيطة ولا نتيجة على القرص، ولا تُرسَل إلى أي مكان. إغلاق الحاسبة يُهمِل كل ما كتبتَه فيها.</div>
+      </aside>
+      <h2>٣. عمليات الشراء</h2>
+      <p>يوفِّر Numeria عملية شراء واحدة غير قابلة للاستهلاك داخل التطبيق هي «فتح جميع الحاسبات». تتم معالجة الدفع بالكامل بواسطة Apple عبر App Store و StoreKit. ونحن لا نرى ولا نستلم ولا نخزِّن طريقة دفعك أو رقم بطاقتك أو Apple ID الخاص بك أو سجلّ مشترياتك.</p>
+      <p>البيانات الوحيدة المتعلقة بالشراء التي يحتفظ بها التطبيق هي علامة فتح القفل المحلية المذكورة أعلاه. وعندما تستخدم <em>استعادة المشتريات</em>، يستعلم التطبيق من App Store مباشرةً من جهازك؛ ويُستخدَم الرد لضبط تلك العلامة فقط ولا يُحوَّل إلينا. أما عمليات الاسترداد فتعالجها Apple وفق سياساتها الخاصة.</p>
+      <h2>٤. الأطراف الثالثة</h2>
+      <p>لا يدمج Numeria أي حزم تطوير برمجيات من أطراف ثالثة — لا شبكات إعلانية، ولا موفِّري تحليلات، ولا حزم وسائل تواصل اجتماعي، ولا أدوات إبلاغ عن الأعطال. خدمات المنصة الوحيدة التي يتواصل معها هي:</p>
+      <ul>
+        <li>App Store التابع لـ Apple، وذلك حصرًا للتحقُّق من عملية الشراء داخل التطبيق، و</li>
+        <li>المتصفّح الخارجي على جهازك، عندما تنقر رابط <em>الدعم</em> أو <em>سياسة الخصوصية</em> في الإعدادات فيفتح النظام ذلك الرابط خارج التطبيق.</li>
+      </ul>
+      <h2>٥. عن هذه الصفحة</h2>
+      <p>التطبيق لا يجمع شيئًا، غير أن هذه الوثيقة مستضافة على GitHub Pages لكي يتوفَّر لـ App Store رابط يمكن الإشارة إليه. وعند تحميلك لهذه الصفحة، قد تسجِّل GitHub معلومات سجلّ الخادم المعتادة — مثل عنوان IP ونوع المتصفّح ووقت الطلب — بموجب <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">بيان الخصوصية الخاص بـ GitHub</a>. ونحن لا نستلم تلك السجلات ولا نملك صلاحية الوصول إليها.</p>
+      <p>لا تُحمِّل هذه الصفحة أي خطوط أو نصوص برمجية أو أوراق أنماط أو صور أو متتبعات خارجية. الشيء الوحيد الذي تكتبه في متصفّحك هو اللغة التي اخترتَها، كي تُفتَح الصفحة باللغة نفسها في المرّة القادمة.</p>
+      <h2>٦. الأطفال</h2>
+      <p>Numeria أداة حساب عامة تصنيفها العمري ٤+. وهي ليست موجَّهة إلى الأطفال، ولا تجمع بيانات من أي شخص — بما في ذلك الأطفال.</p>
+      <h2>٧. الاحتفاظ بالبيانات وحذفها</h2>
+      <p>لا توجد نسخة من بياناتك على أي خادم، لذا ليس لدينا ما نحتفظ به أو نُصدِّره أو نحذفه. ولإزالة كل أثر للبيانات التي كتبها Numeria، احذف التطبيق فحسب: إلغاء التثبيت يمحو التفضيلات المحلية المدرجة في القسم ٢.</p>
+      <h2>٨. حقوقك</h2>
+      <p>لأن Numeria لا يحتفظ بأي بيانات شخصية عنك، فليس ثمة بيانات شخصية يمكننا الإفصاح عنها أو تصحيحها أو تصديرها أو محوها بناءً على طلبك. الحقوق التي يكفلها GDPR و CCPA وأنظمة مماثلة تتعلق بالبيانات الشخصية، وهذا التطبيق لا يُنشئ أيًّا منها. وإن رأيت أن أيَّ بيان في هذه الصفحة غير دقيق، فأخبِرنا وسنصحِّحه.</p>
+      <h2>٩. التعديلات على هذه السياسة</h2>
+      <p>إذا غيَّر إصدار مستقبلي من Numeria أيَّ شيء ممَّا ورد هنا — كأن نضيف مزامنة سحابية اختيارية أو أي ميزة تتطلَّب الشبكة — فسنحدِّث هذه الصفحة ونُنقِّح تاريخ السريان أعلاه ونفصح عن التغيير في ملاحظات إصدار App Store قبل طرح ذلك الإصدار.</p>
+      <h2>١٠. التواصل</h2>
+      <p>لأي سؤال عن هذه السياسة أو عن التطبيق: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>المطوِّر: <strong>wanggit</strong> (مطوِّر فردي)، ناشر <em>Numeria: حاسبات مالية</em> على App Store.</p>
+
+    <div class="disclaimer">
+      <h2>ليست استشارة مالية</h2>
+      <p>يُنتج Numeria تقديرات حسابية لأغراض التخطيط. ومخرجاته ليست استشارة مالية أو ضريبية أو قانونية أو استثمارية، ولا تأخذ ظروفك الكاملة في الحسبان. استشِر متخصِّصًا مؤهَّلًا قبل الإقدام على أي إجراء بناءً على رقم يعرضه التطبيق.</p>
+    </div>
+  </section>
+  <section class="panel" id="es" lang="es"           dir="ltr" aria-labelledby="es-h1">
+    <header class="doc-head">
+      <h1 id="es-h1">Política de privacidad</h1>
+      <p class="product"><strong>Numeria: Calculadoras financieras</strong> &middot; versión 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>Fecha de entrada en vigor: 13 de septiembre de 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">En una frase</h2>
+      <p>Numeria no recopila nada. Sin cuenta, sin anuncios, sin analíticas y sin servidor: todos los cálculos se realizan íntegramente en tu dispositivo y las cifras que introduces nunca se guardan ni se transmiten.</p>
+    </div>
+
+      <h2>1. Lo que no recopilamos</h2>
+      <p>Numeria no tiene ningún componente de servidor y la aplicación no realiza solicitudes de red propias. Por tanto, no podemos recopilar —y nunca hemos recopilado— lo siguiente:</p>
+      <ul>
+        <li>identificadores personales como tu nombre, correo electrónico, número de teléfono o fecha de nacimiento</li>
+        <li>datos de cuentas financieras, como números de cuenta bancaria, de tarjeta o de corretaje</li>
+        <li>ubicación precisa o aproximada</li>
+        <li>contactos, fotos, datos de salud ni ningún otro contenido de tu dispositivo</li>
+        <li>analíticas de uso, perfiles de comportamiento ni el identificador publicitario (IDFA)</li>
+      </ul>
+      <p>Como no se recopila nada en primer lugar, no hay nada que pueda compartirse con terceros, venderse o verse expuesto en una brecha. La etiqueta de privacidad de Numeria en el App Store es <strong>«No se recopilan datos» (Data Not Collected)</strong>.</p>
+      <h2>2. Lo que se guarda en tu dispositivo</h2>
+      <p>Numeria escribe una pequeña cantidad de datos en el almacén de preferencias local de tu dispositivo para recordar tus elecciones entre sesiones. Estos datos nunca salen de tu dispositivo y nosotros no podemos leerlos:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Idioma</caption>
+        <thead>
+        <tr>
+          <th scope="col">Dato guardado</th>
+          <th scope="col">Para qué sirve</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Identificadores de las últimas 10 calculadoras que abriste</td>
+          <td>Rellenan la lista «Recientes» de la pantalla de inicio</td>
+        </tr>
+        <tr>
+          <td>Identificadores de las calculadoras marcadas como favoritas</td>
+          <td>Rellenan tu lista «Favoritas»</td>
+        </tr>
+        <tr>
+          <td>Preferencia de símbolo de moneda</td>
+          <td>Formatea los importes como esperas</td>
+        </tr>
+        <tr>
+          <td>Preferencia de tema (claro, oscuro o del sistema)</td>
+          <td>Aplica la apariencia que elegiste</td>
+        </tr>
+        <tr>
+          <td>Preferencia de idioma</td>
+          <td>Muestra la interfaz en tu idioma</td>
+        </tr>
+        <tr>
+          <td>Marca de desbloqueo</td>
+          <td>Recuerda que compraste «Desbloquear todo» para no cobrarte dos veces</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>Las cifras que introduces no se guardan.</strong> Ninguna entrada, valor intermedio o resultado de las calculadoras se escribe en disco ni se envía a ningún sitio. Al cerrar una calculadora se descarta lo que escribiste en ella.</div>
+      </aside>
+      <h2>3. Compras</h2>
+      <p>Numeria ofrece una única compra integrada no consumible, «Desbloquear todas las calculadoras». El pago lo procesa íntegramente Apple a través del App Store y StoreKit. Nosotros nunca vemos, recibimos ni guardamos tu método de pago, número de tarjeta, Apple ID o historial de compras.</p>
+      <p>El único dato relacionado con la compra que conserva la aplicación es la marca de desbloqueo local descrita arriba. Cuando usas <em>Restaurar compras</em>, la aplicación consulta el App Store directamente desde tu dispositivo; la respuesta sirve únicamente para establecer esa marca y no se nos reenvía. Los reembolsos los gestiona Apple según sus propias políticas.</p>
+      <h2>4. Terceros</h2>
+      <p>Numeria no integra SDK de terceros: ni redes publicitarias, ni proveedores de analíticas, ni SDK de redes sociales, ni herramientas de informe de fallos. Los únicos servicios de plataforma con los que se comunica son:</p>
+      <ul>
+        <li>el App Store de Apple, exclusivamente para validar la compra integrada, y</li>
+        <li>el navegador externo de tu dispositivo, cuando pulsas los enlaces <em>Soporte</em> o <em>Política de privacidad</em> en Ajustes y el sistema abre esa URL fuera de la aplicación.</li>
+      </ul>
+      <h2>5. Sobre esta página web</h2>
+      <p>La aplicación no recopila nada, pero este documento está alojado en GitHub Pages para que el App Store disponga de una URL a la que enlazar. Al cargarla, GitHub puede registrar información estándar de registro del servidor —como tu dirección IP, el tipo de navegador y la hora de la solicitud— conforme a la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">propia declaración de privacidad de GitHub</a>. Nosotros no recibimos esos registros ni tenemos acceso a ellos.</p>
+      <p>Esta página no carga fuentes, scripts, hojas de estilo, imágenes ni rastreadores externos. Lo único que escribe en tu navegador es el idioma que has elegido, para que la página se abra en ese mismo idioma la próxima vez.</p>
+      <h2>6. Menores</h2>
+      <p>Numeria es una herramienta de cálculo de uso general con clasificación 4+. No está dirigida a menores y no recopila datos de nadie, menores incluidos.</p>
+      <h2>7. Conservación y eliminación de datos</h2>
+      <p>No existe ninguna copia de tus datos en un servidor, así que no tenemos nada que conservar, exportar ni eliminar. Para borrar todo rastro de los datos que Numeria haya escrito, simplemente elimina la aplicación: desinstalarla borra las preferencias locales enumeradas en la sección 2.</p>
+      <h2>8. Tus derechos</h2>
+      <p>Como Numeria no conserva ningún dato personal sobre ti, no hay datos personales que podamos revelar, corregir, exportar o suprimir a petición tuya. Los derechos que reconocen el RGPD, la CCPA y normas similares recaen sobre datos personales, y esta aplicación no genera ninguno. Si crees que algo de esta página es inexacto, dínoslo y lo corregiremos.</p>
+      <h2>9. Cambios en esta política</h2>
+      <p>Si una versión futura de Numeria modifica algo de lo aquí descrito —por ejemplo, si añadiéramos sincronización opcional en la nube o cualquier función con conexión— actualizaremos esta página, revisaremos la fecha de entrada en vigor y revelaremos el cambio en las notas de la versión del App Store antes de publicar esa versión.</p>
+      <h2>10. Contacto</h2>
+      <p>Para preguntas sobre esta política o sobre la aplicación: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>Desarrollador: <strong>wanggit</strong> (desarrollador individual), editor de <em>Numeria: Calculadoras financieras</em> en el App Store.</p>
+
+    <div class="disclaimer">
+      <h2>No es asesoramiento financiero</h2>
+      <p>Numeria produce estimaciones aritméticas con fines de planificación. Sus resultados no constituyen asesoramiento financiero, fiscal, jurídico ni de inversión, y no tienen en cuenta todas tus circunstancias. Consulta a un profesional cualificado antes de actuar basándote en cualquier cifra que la aplicación te muestre.</p>
+    </div>
+  </section>
+  <section class="panel" id="pt" lang="pt"           dir="ltr" aria-labelledby="pt-h1">
+    <header class="doc-head">
+      <h1 id="pt-h1">Política de Privacidade</h1>
+      <p class="product"><strong>Numeria: Calculadoras financeiras</strong> &middot; versão 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>Data de vigência: 13 de setembro de 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">Em uma frase</h2>
+      <p>A Numeria não coleta nada. Sem conta, sem anúncios, sem análise de dados e sem servidor: todo cálculo acontece inteiramente no seu aparelho, e os números que você digita nunca são armazenados nem transmitidos.</p>
+    </div>
+
+      <h2>1. O que não coletamos</h2>
+      <p>A Numeria não possui nenhum componente de servidor e o aplicativo não faz solicitações de rede próprias. Portanto, não podemos coletar — e nunca coletamos — o seguinte:</p>
+      <ul>
+        <li>identificadores pessoais, como nome, e-mail, número de telefone ou data de nascimento</li>
+        <li>dados de contas financeiras, como números de conta bancária, de cartão ou de corretora</li>
+        <li>localização precisa ou aproximada</li>
+        <li>contatos, fotos, dados de saúde ou qualquer outro conteúdo do seu aparelho</li>
+        <li>análise de uso, perfis comportamentais ou o identificador de publicidade (IDFA)</li>
+      </ul>
+      <p>Como nada é coletado em primeiro lugar, não há nada que possa ser compartilhado com terceiros, vendido ou vazado. O rótulo de privacidade da Numeria na App Store é <strong>«Dados não coletados» (Data Not Collected)</strong>.</p>
+      <h2>2. O que fica armazenado no seu aparelho</h2>
+      <p>A Numeria grava uma pequena quantidade de dados no armazenamento local de preferências do seu aparelho para lembrar suas escolhas entre as aberturas. Esses dados nunca saem do aparelho e não podem ser lidos por nós:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Idioma</caption>
+        <thead>
+        <tr>
+          <th scope="col">Dado armazenado</th>
+          <th scope="col">Para que serve</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Identificadores das últimas 10 calculadoras que você abriu</td>
+          <td>Preenchem a lista «Recentes» na tela inicial</td>
+        </tr>
+        <tr>
+          <td>Identificadores das calculadoras marcadas como favoritas</td>
+          <td>Preenchem sua lista «Favoritas»</td>
+        </tr>
+        <tr>
+          <td>Preferência de símbolo de moeda</td>
+          <td>Formata os valores monetários como você espera</td>
+        </tr>
+        <tr>
+          <td>Preferência de tema (claro, escuro ou do sistema)</td>
+          <td>Aplica a aparência que você escolheu</td>
+        </tr>
+        <tr>
+          <td>Preferência de idioma</td>
+          <td>Exibe a interface no seu idioma</td>
+        </tr>
+        <tr>
+          <td>Marcador de desbloqueio</td>
+          <td>Lembra que você comprou «Desbloquear tudo», para nunca cobrar duas vezes</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>Os números que você digita não são salvos.</strong> Nenhuma entrada, valor intermediário ou resultado de calculadora é gravado em disco nem enviado a qualquer lugar. Ao fechar uma calculadora, o que você digitou é descartado.</div>
+      </aside>
+      <h2>3. Compras</h2>
+      <p>A Numeria oferece uma única compra integrada não consumível, «Desbloquear todas as calculadoras». O pagamento é processado integralmente pela Apple, por meio da App Store e do StoreKit. Nós nunca vemos, recebemos ou armazenamos sua forma de pagamento, número de cartão, Apple ID ou histórico de compras.</p>
+      <p>O único dado relacionado à compra que o aplicativo mantém é o marcador local de desbloqueio descrito acima. Quando você usa <em>Restaurar compras</em>, o aplicativo consulta a App Store diretamente do seu aparelho; a resposta serve apenas para definir esse marcador e não nos é encaminhada. Reembolsos são tratados pela Apple conforme suas próprias políticas.</p>
+      <h2>4. Terceiros</h2>
+      <p>A Numeria não incorpora SDKs de terceiros — nem redes de publicidade, nem provedores de análise, nem SDKs de redes sociais, nem relatórios de falhas. Os únicos serviços de plataforma com os quais se comunica são:</p>
+      <ul>
+        <li>a App Store da Apple, exclusivamente para validar a compra integrada, e</li>
+        <li>o navegador externo do seu aparelho, quando você toca nos links <em>Suporte</em> ou <em>Política de Privacidade</em> em Ajustes e o sistema abre essa URL fora do aplicativo.</li>
+      </ul>
+      <h2>5. Sobre esta página</h2>
+      <p>O aplicativo não coleta nada, mas este documento está hospedado no GitHub Pages para que a App Store tenha uma URL para vincular. Ao carregá-la, o GitHub pode registrar informações padrão de log do servidor — como seu endereço IP, tipo de navegador e hora da solicitação — nos termos da <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">própria declaração de privacidade do GitHub</a>. Nós não recebemos esses logs nem temos acesso a eles.</p>
+      <p>Esta página não carrega fontes, scripts, folhas de estilo, imagens nem rastreadores externos. A única coisa que ela grava no seu navegador é o idioma escolhido, para que a página reabra no mesmo idioma da próxima vez.</p>
+      <h2>6. Crianças</h2>
+      <p>A Numeria é uma ferramenta de cálculo de uso geral com classificação 4+. Não é direcionada a crianças e não coleta dados de ninguém — incluindo crianças.</p>
+      <h2>7. Retenção e exclusão de dados</h2>
+      <p>Não existe nenhuma cópia dos seus dados em servidor, então não há nada para retermos, exportarmos ou excluirmos. Para remover todo vestígio dos dados que a Numeria gravou, basta apagar o aplicativo: desinstalar apaga as preferências locais listadas na seção 2.</p>
+      <h2>8. Seus direitos</h2>
+      <p>Como a Numeria não guarda nenhum dado pessoal sobre você, não há dados pessoais a divulgar, corrigir, exportar ou apagar mediante solicitação. Os direitos previstos no GDPR, na CCPA e em regimes semelhantes incidem sobre dados pessoais, e este aplicativo não cria nenhum. Se você achar que algo nesta página está incorreto, avise-nos e corrigiremos.</p>
+      <h2>9. Alterações desta política</h2>
+      <p>Se uma versão futura da Numeria alterar qualquer coisa aqui descrita — por exemplo, se acrescentarmos sincronização opcional em nuvem ou qualquer recurso de rede — atualizaremos esta página, revisaremos a data de vigência acima e divulgaremos a alteração nas notas de versão da App Store antes de lançar aquela versão.</p>
+      <h2>10. Contato</h2>
+      <p>Dúvidas sobre esta política ou sobre o aplicativo: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>Desenvolvedor: <strong>wanggit</strong> (desenvolvedor individual), publicador de <em>Numeria: Calculadoras financeiras</em> na App Store.</p>
+
+    <div class="disclaimer">
+      <h2>Não é aconselhamento financeiro</h2>
+      <p>A Numeria produz estimativas aritméticas para fins de planejamento. Seus resultados não constituem aconselhamento financeiro, tributário, jurídico ou de investimento, e não levam em conta todas as suas circunstâncias. Consulte um profissional qualificado antes de agir com base em qualquer número que o aplicativo mostrar.</p>
+    </div>
+  </section>
+  <section class="panel" id="fr" lang="fr"           dir="ltr" aria-labelledby="fr-h1">
+    <header class="doc-head">
+      <h1 id="fr-h1">Politique de confidentialité</h1>
+      <p class="product"><strong>Numeria : Calculateurs financiers</strong> &middot; version 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>Date d&rsquo;entrée en vigueur : 13 septembre 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">En une phrase</h2>
+      <p>Numeria ne collecte rien. Pas de compte, pas de publicité, pas d&rsquo;analyse d&rsquo;audience, pas de serveur : chaque calcul s&rsquo;effectue intégralement sur votre appareil, et les chiffres que vous saisissez ne sont jamais enregistrés ni transmis.</p>
+    </div>
+
+      <h2>1. Ce que nous ne collectons pas</h2>
+      <p>Numeria ne comporte aucun composant serveur et l&rsquo;application n&rsquo;émet aucune requête réseau qui lui soit propre. Nous ne pouvons donc pas collecter — et n&rsquo;avons jamais collecté — les éléments suivants :</p>
+      <ul>
+        <li>les identifiants personnels tels que votre nom, adresse e-mail, numéro de téléphone ou date de naissance</li>
+        <li>les informations de comptes financiers telles que les numéros de compte bancaire, de carte ou de courtage</li>
+        <li>la localisation précise ou approximative</li>
+        <li>les contacts, photos, données de santé ou tout autre contenu de votre appareil</li>
+        <li>les analyses d&rsquo;utilisation, les profils comportementaux ou l&rsquo;identifiant publicitaire (IDFA)</li>
+      </ul>
+      <p>Puisque rien n&rsquo;est collecté en premier lieu, il n&rsquo;existe rien qui puisse être partagé avec un tiers, vendu, ou exposé lors d&rsquo;une fuite de données. L&rsquo;étiquette de confidentialité de Numeria sur l&rsquo;App Store est <strong>« Données non collectées » (Data Not Collected)</strong>.</p>
+      <h2>2. Ce qui est conservé sur votre appareil</h2>
+      <p>Numeria écrit une petite quantité de données dans le stockage local des préférences de votre appareil afin de mémoriser vos choix d&rsquo;un lancement à l&rsquo;autre. Ces données ne quittent jamais votre appareil et ne nous sont pas lisibles :</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Langue</caption>
+        <thead>
+        <tr>
+          <th scope="col">Donnée conservée</th>
+          <th scope="col">Sa raison d&rsquo;être</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Les identifiants des 10 derniers calculateurs ouverts</td>
+          <td>Alimentent la liste « Récents » sur l&rsquo;écran d&rsquo;accueil</td>
+        </tr>
+        <tr>
+          <td>Les identifiants des calculateurs marqués comme favoris</td>
+          <td>Alimentent votre liste « Favoris »</td>
+        </tr>
+        <tr>
+          <td>La préférence de symbole monétaire</td>
+          <td>Formate les montants comme vous le souhaitez</td>
+        </tr>
+        <tr>
+          <td>La préférence de thème (clair, sombre ou système)</td>
+          <td>Applique l&rsquo;apparence que vous avez choisie</td>
+        </tr>
+        <tr>
+          <td>La préférence de langue</td>
+          <td>Affiche l&rsquo;interface dans votre langue</td>
+        </tr>
+        <tr>
+          <td>Le marqueur de déverrouillage</td>
+          <td>Mémorise votre achat « Tout déverrouiller » pour ne jamais vous le faire payer deux fois</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>Les chiffres que vous saisissez ne sont pas enregistrés.</strong> Aucune saisie, valeur intermédiaire ou résultat de calculateur n&rsquo;est écrit sur le disque ni envoyé où que ce soit. Fermer un calculateur efface ce que vous y aviez saisi.</div>
+      </aside>
+      <h2>3. Achats</h2>
+      <p>Numeria propose un unique achat intégré non consommable, « Déverrouiller tous les calculateurs ». Le paiement est traité intégralement par Apple via l&rsquo;App Store et StoreKit. Nous ne voyons, ne recevons ni ne conservons jamais votre moyen de paiement, votre numéro de carte, votre identifiant Apple ou votre historique d&rsquo;achats.</p>
+      <p>La seule donnée liée à l&rsquo;achat que l&rsquo;application conserve est le marqueur local de déverrouillage décrit ci-dessus. Lorsque vous utilisez <em>Restaurer les achats</em>, l&rsquo;application interroge l&rsquo;App Store directement depuis votre appareil ; la réponse sert uniquement à positionner ce marqueur et ne nous est pas transmise. Les remboursements sont gérés par Apple selon ses propres conditions.</p>
+      <h2>4. Tiers</h2>
+      <p>Numeria n&rsquo;intègre aucun SDK tiers — ni régie publicitaire, ni fournisseur d&rsquo;analyse d&rsquo;audience, ni SDK de réseau social, ni outil de rapport d&rsquo;incident. Les seuls services de plateforme avec lesquels il communique sont :</p>
+      <ul>
+        <li>l&rsquo;App Store d&rsquo;Apple, uniquement pour valider l&rsquo;achat intégré, et</li>
+        <li>le navigateur externe de votre appareil, lorsque vous touchez les liens <em>Assistance</em> ou <em>Politique de confidentialité</em> dans les Réglages et que le système ouvre cette URL en dehors de l&rsquo;application.</li>
+      </ul>
+      <h2>5. À propos de cette page web</h2>
+      <p>L&rsquo;application ne collecte rien, mais ce document est hébergé sur GitHub Pages afin que l&rsquo;App Store dispose d&rsquo;une URL à laquelle renvoyer. Lorsque vous la chargez, GitHub peut enregistrer les informations de journalisation serveur standards — telles que votre adresse IP, le type de navigateur et l&rsquo;heure de la requête — conformément à la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">propre déclaration de confidentialité de GitHub</a>. Nous ne recevons pas ces journaux et n&rsquo;y avons pas accès.</p>
+      <p>Cette page ne charge aucune police, aucun script, aucune feuille de style, aucune image ni aucun traceur externe. La seule chose qu&rsquo;elle écrit dans votre navigateur est la langue que vous avez choisie, afin que la page s&rsquo;ouvre dans cette même langue la prochaine fois.</p>
+      <h2>6. Enfants</h2>
+      <p>Numeria est un outil de calcul généraliste classé 4+. Il ne s&rsquo;adresse pas aux enfants et ne collecte de données auprès de personne, enfants compris.</p>
+      <h2>7. Conservation et suppression des données</h2>
+      <p>Il n&rsquo;existe aucune copie de vos données côté serveur : nous n&rsquo;avons donc rien à conserver, exporter ou supprimer. Pour effacer toute trace des données écrites par Numeria, supprimez simplement l&rsquo;application : la désinstallation efface les préférences locales énumérées à la section 2.</p>
+      <h2>8. Vos droits</h2>
+      <p>Comme Numeria ne détient aucune donnée personnelle vous concernant, il n&rsquo;y a aucune donnée personnelle que nous puissions divulguer, rectifier, exporter ou effacer à votre demande. Les droits garantis par le RGPD, le CCPA et les réglementations similaires portent sur des données personnelles, et cette application n&rsquo;en crée aucune. Si vous estimez qu&rsquo;un élément de cette page est inexact, signalez-le-nous et nous le corrigerons.</p>
+      <h2>9. Modifications de cette politique</h2>
+      <p>Si une version future de Numeria modifie quoi que ce soit décrit ici — par exemple l&rsquo;ajout d&rsquo;une synchronisation facultative dans le cloud ou de toute fonctionnalité réseau — nous mettrons cette page à jour, réviserons la date d&rsquo;entrée en vigueur ci-dessus et annoncerons le changement dans les notes de version de l&rsquo;App Store avant la publication de cette version.</p>
+      <h2>10. Contact</h2>
+      <p>Pour toute question sur cette politique ou sur l&rsquo;application : <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>Développeur : <strong>wanggit</strong> (développeur individuel), éditeur de <em>Numeria : Calculateurs financiers</em> sur l&rsquo;App Store.</p>
+
+    <div class="disclaimer">
+      <h2>Ceci n&rsquo;est pas un conseil financier</h2>
+      <p>Numeria produit des estimations arithmétiques destinées à la planification. Ses résultats ne constituent pas un conseil financier, fiscal, juridique ou en investissement, et ne tiennent pas compte de l&rsquo;ensemble de votre situation. Consultez un professionnel qualifié avant d&rsquo;agir sur la base d&rsquo;un chiffre affiché par l&rsquo;application.</p>
+    </div>
+  </section>
+  <section class="panel" id="de" lang="de"           dir="ltr" aria-labelledby="de-h1">
+    <header class="doc-head">
+      <h1 id="de-h1">Datenschutzerklärung</h1>
+      <p class="product"><strong>Numeria: Finanzrechner</strong> &middot; Version 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>Stand: 13. September 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">In einem Satz</h2>
+      <p>Numeria erhebt nichts. Kein Konto, keine Werbung, kein Tracking und kein Server — jede Berechnung läuft vollständig auf Ihrem Gerät, und die eingegebenen Zahlen werden weder gespeichert noch übertragen.</p>
+    </div>
+
+      <h2>1. Was wir nicht erheben</h2>
+      <p>Numeria hat keine Serverkomponente und die App stellt selbst keine Netzwerkanfragen. Deshalb können wir Folgendes nicht erheben — und haben es auch nie getan:</p>
+      <ul>
+        <li>personenbezogene Merkmale wie Name, E-Mail-Adresse, Telefonnummer oder Geburtsdatum</li>
+        <li>Finanzkontodaten wie Bank-, Karten- oder Depotnummern</li>
+        <li>genauen oder ungefähren Standort</li>
+        <li>Kontakte, Fotos, Gesundheitsdaten oder sonstige Inhalte Ihres Geräts</li>
+        <li>Nutzungsanalysen, Verhaltensprofile oder die Werbekennung (IDFA)</li>
+      </ul>
+      <p>Weil von vornherein nichts erhoben wird, gibt es auch nichts, das an Dritte weitergegeben, verkauft oder durch eine Datenpanne offengelegt werden könnte. Die Datenschutzkennzeichnung von Numeria im App Store lautet <strong>„Keine Datenerhebung“ (Data Not Collected)</strong>.</p>
+      <h2>2. Was auf Ihrem Gerät gespeichert wird</h2>
+      <p>Numeria schreibt eine kleine Menge Daten in den lokalen Einstellungsspeicher Ihres Geräts, um Ihre Entscheidungen zwischen den Starts zu behalten. Diese Daten verlassen Ihr Gerät nie und sind für uns nicht lesbar:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">Sprache</caption>
+        <thead>
+        <tr>
+          <th scope="col">Gespeicherter Eintrag</th>
+          <th scope="col">Zweck</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Kennungen der letzten 10 geöffneten Rechner</td>
+          <td>Füllen die Liste „Zuletzt verwendet“ auf dem Startbildschirm</td>
+        </tr>
+        <tr>
+          <td>Kennungen der als Favorit markierten Rechner</td>
+          <td>Füllen Ihre „Favoriten“-Liste</td>
+        </tr>
+        <tr>
+          <td>Währungssymbol-Einstellung</td>
+          <td>Formatiert Geldbeträge so, wie Sie es erwarten</td>
+        </tr>
+        <tr>
+          <td>Design-Einstellung (hell, dunkel oder System)</td>
+          <td>Wendet das gewählte Erscheinungsbild an</td>
+        </tr>
+        <tr>
+          <td>Spracheinstellung</td>
+          <td>Zeigt die Oberfläche in Ihrer Sprache an</td>
+        </tr>
+        <tr>
+          <td>Freischalt-Markierung</td>
+          <td>Merkt sich Ihren Kauf „Alle freischalten“, damit Sie nie zweimal zahlen</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>Ihre Eingabezahlen werden nicht gespeichert.</strong> Keine Rechnereingabe, kein Zwischenwert und kein Ergebnis wird auf die Festplatte geschrieben oder irgendwohin gesendet. Beim Schließen eines Rechners werden Ihre Eingaben verworfen.</div>
+      </aside>
+      <h2>3. Käufe</h2>
+      <p>Numeria bietet genau einen nicht verbrauchbaren In-App-Kauf an: „Alle Rechner freischalten“. Die Zahlung wird vollständig von Apple über den App Store und StoreKit abgewickelt. Wir sehen, erhalten oder speichern niemals Ihre Zahlungsmethode, Kartennummer, Apple-ID oder Kaufhistorie.</p>
+      <p>Die einzige kaufbezogene Angabe, die die App behält, ist die oben beschriebene lokale Freischalt-Markierung. Wenn Sie <em>Käufe wiederherstellen</em> nutzen, fragt die App den App Store direkt von Ihrem Gerät aus ab; die Antwort wird nur zum Setzen dieser Markierung verwendet und nicht an uns weitergeleitet. Erstattungen richtet Apple nach seinen eigenen Bedingungen.</p>
+      <h2>4. Dritte</h2>
+      <p>Numeria bindet keine SDKs Dritter ein — keine Werbenetzwerke, keine Analysedienste, keine Social-Media-SDKs, keine Crash-Reporter. Die einzigen Plattformdienste, mit denen die App kommuniziert, sind:</p>
+      <ul>
+        <li>Apples App Store, ausschließlich zur Prüfung des In-App-Kaufs, und</li>
+        <li>der externe Browser Ihres Geräts, wenn Sie in den Einstellungen auf <em>Support</em> oder <em>Datenschutzerklärung</em> tippen und das System diese URL außerhalb der App öffnet.</li>
+      </ul>
+      <h2>5. Über diese Webseite</h2>
+      <p>Die App erhebt nichts, aber dieses Dokument wird auf GitHub Pages gehostet, damit der App Store eine verlinkbare URL hat. Beim Laden kann GitHub übliche Serverprotokolldaten erfassen — etwa Ihre IP-Adresse, den Browsertyp und die Anfragezeit — gemäß der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">eigenen Datenschutzerklärung von GitHub</a>. Wir erhalten diese Protokolle nicht und haben keinen Zugriff darauf.</p>
+      <p>Diese Seite lädt keine externen Schriften, Skripte, Stylesheets, Bilder oder Tracker. Das Einzige, was sie in Ihrem Browser ablegt, ist die von Ihnen gewählte Sprache, damit die Seite beim nächsten Mal in derselben Sprache öffnet.</p>
+      <h2>6. Kinder</h2>
+      <p>Numeria ist ein allgemeines Berechnungswerkzeug mit einer Altersfreigabe von 4+. Es richtet sich nicht an Kinder und erhebt keinerlei Daten — auch nicht von Kindern.</p>
+      <h2>7. Speicherung und Löschung von Daten</h2>
+      <p>Es gibt keine serverseitige Kopie Ihrer Daten, also haben wir nichts zu speichern, zu exportieren oder zu löschen. Um jede Spur der von Numeria geschriebenen Daten zu entfernen, löschen Sie einfach die App: Die Deinstallation löscht die in Abschnitt 2 aufgeführten lokalen Einstellungen.</p>
+      <h2>8. Ihre Rechte</h2>
+      <p>Da Numeria keine personenbezogenen Daten über Sie besitzt, gibt es keine personenbezogenen Daten, die wir auf Anfrage offenlegen, berichtigen, exportieren oder löschen könnten. Die Rechte aus DSGVO, CCPA und ähnlichen Regelungen knüpfen an personenbezogene Daten an, und diese App erzeugt keine. Falls Sie eine Angabe auf dieser Seite für unzutreffend halten, teilen Sie uns das bitte mit — wir korrigieren sie.</p>
+      <h2>9. Änderungen dieser Erklärung</h2>
+      <p>Sollte eine künftige Version von Numeria etwas an den hier beschriebenen Umständen ändern — etwa durch eine optionale Cloud-Synchronisation oder irgendeine Netzwerkfunktion —, aktualisieren wir diese Seite, passen das oben genannte Datum an und weisen vor der Veröffentlichung jener Version in den App-Store-Versionshinweisen darauf hin.</p>
+      <h2>10. Kontakt</h2>
+      <p>Fragen zu dieser Erklärung oder zur App: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>Entwickler: <strong>wanggit</strong> (Einzelentwickler), Anbieter von <em>Numeria: Finanzrechner</em> im App Store.</p>
+
+    <div class="disclaimer">
+      <h2>Keine Finanzberatung</h2>
+      <p>Numeria erzeugt arithmetische Schätzwerte für Planungszwecke. Die Ausgaben sind keine Finanz-, Steuer-, Rechts- oder Anlageberatung und berücksichtigen Ihre gesamte Situation nicht. Ziehen Sie eine qualifizierte Fachperson hinzu, bevor Sie aufgrund einer von der App angezeigten Zahl handeln.</p>
+    </div>
+  </section>
+  <section class="panel" id="hi" lang="hi"           dir="ltr" aria-labelledby="hi-h1">
+    <header class="doc-head">
+      <h1 id="hi-h1">गोपनीयता नीति</h1>
+      <p class="product"><strong>Numeria: वित्त कैलकुलेटर</strong> &middot; संस्करण 1.0.0 &middot; iOS (iPhone)</p>
+      <p class="effective"><time>प्रभावी तिथि: 13 सितंबर 2026</time></p>
+    </header>
+
+    <div class="tldr">
+      <h2 class="tldr-head">एक वाक्य में</h2>
+      <p>Numeria कुछ भी एकत्र नहीं करता। न खाता, न विज्ञापन, न एनालिटिक्स, न सर्वर — हर गणना पूरी तरह आपके डिवाइस पर होती है, और आपके द्वारा डाले गए अंक न तो सहेजे जाते हैं, न भेजे जाते हैं।</p>
+    </div>
+
+      <h2>1. हम क्या एकत्र नहीं करते</h2>
+      <p>Numeria में कोई सर्वर घटक नहीं है और ऐप स्वयं कोई नेटवर्क अनुरोध नहीं भेजता। इसलिए हम निम्नलिखित एकत्र नहीं कर सकते — और कभी किए भी नहीं:</p>
+      <ul>
+        <li>नाम, ईमेल पता, फ़ोन नंबर या जन्म तिथि जैसे व्यक्तिगत पहचानकर्ता</li>
+        <li>बैंक, कार्ड या ब्रोकरेज खाता संख्याओं जैसी वित्तीय खाता जानकारी</li>
+        <li>सटीक या अनुमानित स्थान</li>
+        <li>संपर्क, फ़ोटो, स्वास्थ्य डेटा, या आपके डिवाइस की कोई अन्य सामग्री</li>
+        <li>उपयोग एनालिटिक्स, व्यवहार प्रोफ़ाइल, या विज्ञापन पहचानकर्ता (IDFA)</li>
+      </ul>
+      <p>चूँकि शुरू में ही कुछ एकत्र नहीं होता, इसलिए कोई ऐसी चीज़ नहीं है जिसे किसी तृतीय पक्ष के साथ साझा या बेचा जा सके, या जो लीक हो सके। App Store पर Numeria का गोपनीयता लेबल <strong>「Data Not Collected」(डेटा एकत्र नहीं किया जाता)</strong> है।</p>
+      <h2>2. आपके डिवाइस पर क्या सहेजा जाता है</h2>
+      <p>ताकि ऐप आपके चुनाव याद रख सके, Numeria आपके डिवाइस के स्थानीय प्राथमिकता संग्रह में थोड़ा डेटा लिखता है। यह डेटा कभी आपके डिवाइस से बाहर नहीं जाता और हम उसे पढ़ नहीं सकते:</p>
+      <div class="table-wrap">
+      <table>
+        <caption class="visually-hidden">भाषा</caption>
+        <thead>
+        <tr>
+          <th scope="col">सहेजा गया आइटम</th>
+          <th scope="col">उसका प्रयोजन</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>आपके खोले गए अंतिम 10 कैलकुलेटरों की पहचान</td>
+          <td>होम स्क्रीन पर 「हाल के」 की सूची भरने के लिए</td>
+        </tr>
+        <tr>
+          <td>पसंदीदा के रूप में चिह्नित कैलकुलेटरों की पहचान</td>
+          <td>आपकी 「पसंदीदा」 सूची भरने के लिए</td>
+        </tr>
+        <tr>
+          <td>मुद्रा चिह्न प्राथमिकता</td>
+          <td>राशियों को आपकी अपेक्षा अनुसार प्रदर्शित करने के लिए</td>
+        </tr>
+        <tr>
+          <td>थीम प्राथमिकता (लाइट, डार्क या सिस्टम)</td>
+          <td>आपकी चुनी हुई रूपरेखा लागू करने के लिए</td>
+        </tr>
+        <tr>
+          <td>भाषा प्राथमिकता</td>
+          <td>इंटरफ़ेस आपकी भाषा में दिखाने के लिए</td>
+        </tr>
+        <tr>
+          <td>अनलॉक फ़्लैग</td>
+          <td>याद रखने के लिए कि आपने 「सभी अनलॉक」 खरीदा है, ताकि दोबारा भुगतान न माँगा जाए</td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+      <aside class="note" role="note">
+        <span class="note-mark" aria-hidden="true">!</span>
+        <div><strong>आपके डाले गए अंक सहेजे नहीं जाते।</strong> न कोई कैलकुलेटर इनपुट, न मध्यवर्ती मान, न परिणाम डिस्क पर लिखा जाता है या कहीं भेजा जाता है। कैलकुलेटर बंद करते ही आपने उसमें जो टाइप किया वह हट जाता है।</div>
+      </aside>
+      <h2>3. खरीद</h2>
+      <p>Numeria केवल एक गैर-उपभोज्य इन-ऐप खरीद प्रदान करता है — 「सभी कैलकुलेटर अनलॉक करें」। भुगतान पूरी तरह Apple द्वारा App Store और StoreKit के ज़रिए संसाधित होता है। हम आपका भुगतान साधन, कार्ड नंबर, Apple ID या खरीद इतिहास कभी नहीं देखते, प्राप्त नहीं करते, न सहेजते हैं।</p>
+      <p>खरीद से संबंधित एकमात्र डेटा जो ऐप रखता है वह ऊपर बताया गया स्थानीय अनलॉक फ़्लैग है। जब आप <em>खरीद बहाल करें</em> का उपयोग करते हैं, तो ऐप सीधे आपके डिवाइस से App Store से पूछता है; उसका उत्तर केवल वही फ़्लैग सेट करने में उपयोग होता है और हमें अग्रेषित नहीं किया जाता। धनवापसी Apple अपनी नीतियों के अनुसार संभालता है।</p>
+      <h2>4. तृतीय पक्ष</h2>
+      <p>Numeria में कोई तृतीय-पक्ष SDK नहीं है — न विज्ञापन नेटवर्क, न एनालिटिक्स प्रदाता, न सोशल मीडिया SDK, न क्रैश रिपोर्टर। यह केवल इन प्लेटफ़ॉर्म सेवाओं से बात करता है:</p>
+      <ul>
+        <li>Apple का App Store — केवल इन-ऐप खरीद सत्यापित करने के लिए, और</li>
+        <li>आपके डिवाइस का बाहरी ब्राउज़र — जब आप सेटिंग्स में <em>सहायता</em> या <em>गोपनीयता नीति</em> लिंक दबाते हैं तो सिस्टम वह URL ऐप के बाहर खोल देता है।</li>
+      </ul>
+      <h2>5. इस वेब पृष्ठ के बारे में</h2>
+      <p>ऐप कुछ भी एकत्र नहीं करता, पर यह दस्तावेज़ GitHub Pages पर होस्ट किया गया है ताकि App Store के पास जोड़ने हेतु कोई URL हो। इसे लोड करने पर GitHub मानक सर्वर लॉग जानकारी दर्ज कर सकता है — जैसे आपका IP पता, ब्राउज़र प्रकार और अनुरोध समय — <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub की अपनी गोपनीयता नीति</a> के अनुसार। हमें वे लॉग नहीं मिलते और न ही उनकी पहुँच है।</p>
+      <p>यह पृष्ठ कोई बाहरी फ़ॉन्ट, स्क्रिप्ट, स्टाइलशीट, छवि या ट्रैकर लोड नहीं करता। यह आपके ब्राउज़र में केवल आपकी चुनी हुई भाषा लिखता है, ताकि अगली बार पृष्ठ उसी भाषा में खुले।</p>
+      <h2>6. बच्चे</h2>
+      <p>Numeria एक सामान्य-उपयोग गणना उपकरण है जिसकी आयु श्रेणी 4+ है। यह बच्चों के लिए नहीं बनाया गया और यह किसी से भी — बच्चों सहित — कोई डेटा एकत्र नहीं करता।</p>
+      <h2>7. डेटा प्रतिधारण और विलोपन</h2>
+      <p>आपके डेटा की कोई सर्वर-पक्ष प्रतिलिपि नहीं है, इसलिए हमारे पास रखने, निर्यात करने या मिटाने के लिए कुछ नहीं है। Numeria द्वारा लिखे गए हर निशान को हटाने के लिए बस ऐप हटा दें: अनइंस्टॉल करने से खंड 2 में सूचीबित स्थानीय प्राथमिकताएँ मिट जाती हैं।</p>
+      <h2>8. आपके अधिकार</h2>
+      <p>चूँकि Numeria आपके बारे में कोई व्यक्तिगत डेटा नहीं रखता, इसलिए अनुरोध पर प्रकट करने, सुधारने, निर्यात करने या मिटाने हेतु कोई व्यक्तिगत डेटा है ही नहीं। GDPR, CCPA और ऐसे ही नियमों के अंतर्गत अधिकार व्यक्तिगत डेटा से जुड़े होते हैं, और यह ऐप कोई व्यक्तिगत डेटा बनाता नहीं। यदि आपको लगता है कि इस पृष्ठ की कोई बात ग़लत है, कृपया बताएँ — हम सुधार देंगे।</p>
+      <h2>9. इस नीति में बदलाव</h2>
+      <p>यदि Numeria का भविष्य का कोई संस्करण यहाँ बताई किसी बात को बदलता है — मिसाल के तौर पर, यदि हम वैकल्पिक क्लाउड सिंक या कोई नेटवर्क सुविधा जोड़ें — तो हम इस पृष्ठ को अद्यतन करेंगे, ऊपर की प्रभावी तिथि सुधारेंगे, और उस संस्करण के जारी होने से पहले App Store के रिलीज़ नोट्स में बदलाव बताएँगे।</p>
+      <h2>10. संपर्क</h2>
+      <p>इस नीति या ऐप के बारे में प्रश्न: <a href="https://github.com/wanggit/numeria/issues" rel="noopener">https://github.com/wanggit/numeria/issues</a></p>
+      <p>डेवलपर: <strong>wanggit</strong> (व्यक्तिगत डेवलपर), App Store पर <em>Numeria: वित्त कैलकुलेटर</em> के प्रकाशक।</p>
+
+    <div class="disclaimer">
+      <h2>यह वित्तीय सलाह नहीं है</h2>
+      <p>Numeria योजना बनाने के लिए अंकगणितीय अनुमान देता है। इसका परिणाम वित्तीय, कर, क़ानूनी या निवेश सलाह नहीं है, और यह आपकी पूरी परिस्थितियों को ध्यान में नहीं रखता। ऐप द्वारा दिखाए गए किसी भी अंक पर काम करने से पहले किसी योग्य पेशेवर से सलाह लें।</p>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site">
+    <div class="inner">
+      <span><a href="https://github.com/wanggit/numeria" rel="noopener">Source and issue tracker</a></span>
+      <span aria-hidden="true">&middot;</span>
+      <span><a href="https://github.com/wanggit/numeria/issues" rel="noopener">Support</a></span>
+      <span aria-hidden="true">&middot;</span>
+      <span>&copy; 2026 wanggit</span>
+    </div>
+  </footer>
+
+  <script>
+(function () {
+  'use strict';
+
+  var docEl = document.documentElement;
+  docEl.classList.add('js');
+
+  var CODES = ['en', 'zh', 'ja', 'ar', 'es', 'pt', 'fr', 'de', 'hi'];
+  var TITLES = {en: 'Numeria — Privacy Policy', zh: 'Numeria — 隐私政策', ja: 'Numeria — プライバシーポリシー', ar: 'Numeria — سياسة الخصوصية', es: 'Numeria — Política de privacidad', pt: 'Numeria — Política de Privacidade', fr: 'Numeria — Politique de confidentialité', de: 'Numeria — Datenschutzerklärung', hi: 'Numeria — गोपनीयता नीति'};
+  var STORE_KEY = 'numeria-privacy-lang';
+
+  var panels = {};
+  CODES.forEach(function (c) { panels[c] = document.getElementById(c); });
+  var links = Array.prototype.slice.call(document.querySelectorAll('.langs a'));
+
+  function supported(code) {
+    return Object.prototype.hasOwnProperty.call(panels, code) && !!panels[code];
+  }
+
+  function readStored() {
+    try { return window.localStorage.getItem(STORE_KEY); } catch (e) { return null; }
+  }
+
+  function writeStored(code) {
+    try { window.localStorage.setItem(STORE_KEY, code); } catch (e) { /* private mode */ }
+  }
+
+  /* Match a BCP-47 tag ("zh-Hans-CN", "ar-SA", "pt-BR") against our codes,
+     most specific first so zh-Hant does not silently land on zh. */
+  function fromTag(tag) {
+    if (!tag) return null;
+    var parts = String(tag).toLowerCase().split(/[-_]/);
+    while (parts.length) {
+      var cand = parts.join('-');
+      for (var i = 0; i < CODES.length; i++) {
+        if (CODES[i] === cand) return CODES[i];
+      }
+      /* Our panels use bare primary subtags except zh, so also try that. */
+      if (supported(parts[0])) return parts[0];
+      parts.pop();
+    }
+    return null;
+  }
+
+  function pick() {
+    var hash = (window.location.hash || '').replace('#', '');
+    if (supported(hash)) return hash;
+
+    var stored = readStored();
+    if (supported(stored)) return stored;
+
+    var nav = window.navigator;
+    var tags = [];
+    if (nav) {
+      if (nav.languages && nav.languages.length) tags = tags.concat(nav.languages);
+      if (nav.language) tags.push(nav.language);
+    }
+    for (var i = 0; i < tags.length; i++) {
+      var m = fromTag(tags[i]);
+      if (m) return m;
+    }
+    return 'en';
+  }
+
+  function activate(code, opts) {
+    opts = opts || {};
+    if (!supported(code)) code = 'en';
+
+    CODES.forEach(function (c) {
+      var on = c === code;
+      panels[c].classList.toggle('is-active', on);
+      if (on) { panels[c].removeAttribute('aria-hidden'); }
+      else { panels[c].setAttribute('aria-hidden', 'true'); }
+    });
+
+    links.forEach(function (a) {
+      if (a.getAttribute('data-lang') === code) a.setAttribute('aria-current', 'true');
+      else a.removeAttribute('aria-current');
+    });
+
+    var panel = panels[code];
+    docEl.lang = panel.getAttribute('lang') || code;
+    docEl.dir = panel.getAttribute('dir') || 'ltr';
+    document.title = TITLES[code] || TITLES.en;
+
+    if (opts.persist !== false) writeStored(code);
+    if (opts.scroll) {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+    }
+  }
+
+  links.forEach(function (a) {
+    a.addEventListener('click', function (ev) {
+      var code = a.getAttribute('data-lang');
+      if (!supported(code)) return;
+      ev.preventDefault();
+      activate(code, { scroll: true });
+      if (history.replaceState) history.replaceState(null, '', '#' + code);
+      else window.location.hash = code;
+    });
+  });
+
+  window.addEventListener('hashchange', function () {
+    var hash = (window.location.hash || '').replace('#', '');
+    if (supported(hash)) activate(hash, { scroll: false });
+  });
+
+  activate(pick(), { scroll: false });
+})();
+  </script>
+</body>
+</html>
