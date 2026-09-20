@@ -11,6 +11,7 @@ This repository hosts the app's public web presence on GitHub Pages.
 | --- | --- |
 | Site home | <https://wanggit.github.io/numeria/> |
 | Privacy policy (9 languages) | <https://wanggit.github.io/numeria/privacy/> |
+| Technical support (English / Chinese) | <https://wanggit.github.io/numeria/support/> |
 | Support / issue tracker | <https://github.com/wanggit/numeria/issues> |
 
 The privacy policy URL above is the one declared in the App Store listing and
@@ -22,6 +23,7 @@ also asserted by `test/release_readiness_test.dart`.
 ```
 index.html          site landing page
 privacy/index.html  privacy policy, self-contained, 9 localisations
+support/index.html  technical support, English and Simplified Chinese
 tools/              generator + content sources for the privacy page
 ```
 
