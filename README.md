@@ -12,6 +12,7 @@ This repository hosts the app's public web presence on GitHub Pages.
 | Site home | <https://wanggit.github.io/numeria/> |
 | Privacy policy (9 languages) | <https://wanggit.github.io/numeria/privacy/> |
 | Technical support (English / Chinese) | <https://wanggit.github.io/numeria/support/> |
+| App review recording | <https://github.com/wanggit/numeria/releases/tag/review-20260921-2051> |
 | Support / issue tracker | <https://github.com/wanggit/numeria/issues> |
 
 The privacy policy URL above is the one declared in the App Store listing and
